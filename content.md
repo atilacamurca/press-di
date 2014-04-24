@@ -74,6 +74,8 @@ o qual configura o ambiente adequado injetando as depedências necessárias.
 Usando AngularJS vamos criar uma espécie de _playlist_ com músicas de vários
 albúns no qual nós somos capazes de buscar por qualquer música.
 
+Ver: [github.com/atilacamurca/press-di/tree/master/playlist](https://github.com/atilacamurca/press-di/tree/master/playlist)
+
 ---
 
 ### Como isso funciona?
@@ -125,10 +127,3 @@ O método `map` da classe `Array` funciona assim:
 * <http://misko.hevery.com/2008/09/10/where-have-all-the-new-operators-gone/>
 * <http://ionicframework.com/blog/angular-mobile-dev/>
 * <https://github.com/btford/briantford.com/blob/master/jade/blog/understanding-di.md>
-
----
-
-### Frases
-
-
-> Factory creates the server, but does not run it.
