@@ -1,0 +1,165 @@
+\section{Introdução}
+
+\begin{frame}[fragile]\frametitle{Introdução}
+
+O conceito de Framework agrega além de códigos pré-prontos a utilização
+de Padrões de Projeto. Um desses padrões, que nasceu junto com as
+Frameworks é o Inversão de Controle, que mais tarde foi refinado por
+Martin Fowler e ganhou o nome de Injeção de Dependência ou Dependency
+Injection (DI).
+
+\bigskip
+
+\url{http://www.martinfowler.com/articles/injection.html}
+
+\end{frame}
+
+\section{Definição}
+
+\begin{frame}\frametitle{Definição}
+
+\textbf{Dependency Injection} significa dizer que os componentes de uma
+classe não necessitam procurar por suas dependências num contexto global
+ou usando localizadores de serviços. Ao invés disso suas dependências
+são simplesmente injetadas na hora da criação e seu \textbf{Criador} é o
+responsável por provê-las.
+
+\end{frame}
+
+\begin{frame}\frametitle{Definição}
+
+Para isso são necessários três elementos:
+
+\begin{itemize}
+\item
+  um \textbf{componente dependente},
+\item
+  uma \textbf{declaração das dependências} do componente e
+\item
+  um \textbf{componente injetor} que provê o componente dependente com
+  suas dependências.
+\end{itemize}
+\end{frame}
+
+\section{Vantagens}
+
+\begin{frame}\frametitle{Vantagens}
+
+Uma das razões que levaram a criação desse padrão é a necessidade de
+testes automatizados.
+
+Usando \textbf{DI} você é capaz de criar ambientes para teste e produção
+devido ao \textbf{baixo acoplamento} proporcionado. Isso porque o padrão
+conta com um \textbf{Criador} o qual configura o ambiente adequado
+injetando as depedências necessárias.
+
+\end{frame}
+
+\section{Quem utiliza?}
+
+\begin{frame}\frametitle{Quem utiliza?}
+
+\begin{figure}
+    \includegraphics[scale=0.3]{img/zend2.png}
+    \caption{Zend Framework 2 (PHP)}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}\frametitle{Quem utiliza?}
+
+\begin{figure}
+    \includegraphics[scale=0.4]{img/oss-logo-spring.png}
+    \caption{Spring (Java)}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}\frametitle{Quem utiliza?}
+
+\begin{figure}
+    \includegraphics[scale=0.4]{img/angularjs-logo.png}
+    \caption{AngularJS (Javascript)}
+\end{figure}
+
+\end{frame}
+
+\section{Exemplo}
+
+\begin{frame}\frametitle{Exemplo}
+
+Usando AngularJS vamos criar uma espécie de \emph{playlist} com músicas
+de vários albúns no qual nós somos capazes de buscar por qualquer
+música.
+
+\end{frame}
+
+\begin{frame}\frametitle{Como isso funciona?}
+
+\inputjscodefile{src/injector-01.js}
+
+\end{frame}
+
+\begin{frame}\frametitle{Como isso funciona?}
+
+\inputjscodefile{src/injector-02.js}
+
+\end{frame}
+
+\begin{frame}\frametitle{Como isso funciona?}
+
+\inputjscodefile{src/injector-03.js}
+
+\end{frame}
+
+\begin{frame}\frametitle{Como isso funciona?}
+
+\inputjscodefile{src/controller-01.js}
+
+\end{frame}
+
+\begin{frame}\frametitle{Como isso funciona?}
+
+\inputjscodefile{src/controller-02.js}
+
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Como isso funciona?}
+
+O método \texttt{map} da classe \texttt{Array} funciona assim:
+
+\inputjscodefile{src/ex-array-map.js}
+
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Links}
+
+\begin{itemize}
+\item
+  \url{http://framework.zend.com/manual/2.0/en/modules/zend.di.introduction.html}
+\item
+  \url{http://javafree.uol.com.br/artigo/871453/}
+\item
+  \url{http://pt.wikipedia.org/wiki/Inje%C3%A7%C3%A3o_de_depend%C3%AAncia}
+\item
+  \url{https://docs.angularjs.org/guide/di}
+\item
+  \url{http://martinfowler.com/articles/injection.html}
+\item
+  \url{http://googletesting.blogspot.com.br/2008/10/dependency-injection-myth-reference.html}
+\item
+  \url{http://misko.hevery.com/2008/09/10/where-have-all-the-new-operators-gone/}
+\item
+  \url{http://ionicframework.com/blog/angular-mobile-dev/}
+\item
+  \url{https://github.com/btford/briantford.com/blob/master/jade/blog/understanding-di.md}
+\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Frases}
+
+\begin{quote}
+Factory creates the server, but does not run it.
+
+\end{quote}
+\end{frame}
