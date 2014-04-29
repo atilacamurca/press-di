@@ -116,6 +116,15 @@ O método `map` da classe `Array` funciona assim:
 
 ---
 
+### Como isso funciona?
+
+\begin{figure}
+	\includegraphics[scale=0.3]{img/diagrama-dependency-injection.jpg}
+	\caption{Diagrama de Classe: Injeção de Dependência}
+\end{figure}
+
+---
+
 ### Links
 
 * <http://framework.zend.com/manual/2.0/en/modules/zend.di.introduction.html>
